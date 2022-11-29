@@ -23,7 +23,7 @@ if n==0:
 binary.reverse()
 binary="".join(list(map(str,binary)))
 
-consecutive=[num[0] for num in re.findall(r'(([01])\2+)', binary)]
+consecutive=[num[0] for num in re.findall(r'(([1])\2+)', binary)]
 
 if not consecutive:
   print(1)
