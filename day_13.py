@@ -11,7 +11,8 @@ class MyBook(Book):
     def __init__(self,title,author,price):
         super().__init__(title, author)
         self.price=price
-        
+    
+    # abstract-method in base class => must define in class MyBook        
     def display(self):
         print("Title:", self.title)
         print("Author:", self.author)
